@@ -13,6 +13,14 @@ namespace ConvertidorNumerosRomanos.Tests
 
             numeroRomano.Should().Be("I");
         }
+        
+        [Fact]
+        public void Si_NumeroEs2_Debe_RetornarII()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular("2");
+
+            numeroRomano.Should().Be("II");
+        }
     }
 
     internal static class CalculadoraNumerosRomanos

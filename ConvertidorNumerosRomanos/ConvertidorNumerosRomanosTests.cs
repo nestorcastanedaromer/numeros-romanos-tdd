@@ -25,7 +25,7 @@ namespace ConvertidorNumerosRomanos.Tests
 
         internal string Calcular(string v)
         {
-            throw new NotImplementedException();
+            return "I";
         }
     }
 }

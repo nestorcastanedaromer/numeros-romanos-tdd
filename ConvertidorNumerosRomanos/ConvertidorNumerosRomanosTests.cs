@@ -9,7 +9,7 @@ namespace ConvertidorNumerosRomanos.Tests
         [Fact]
         public void Si_NumeroEs1_Debe_RetornarI()
         {
-            string numeroRomano = CalculadoraNumerosRomanos.Calcular("1");
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(1);
 
             numeroRomano.Should().Be("I");
         }
@@ -17,7 +17,7 @@ namespace ConvertidorNumerosRomanos.Tests
         [Fact]
         public void Si_NumeroEs2_Debe_RetornarII()
         {
-            string numeroRomano = CalculadoraNumerosRomanos.Calcular("2");
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(2);
 
             numeroRomano.Should().Be("II");
         }
@@ -25,9 +25,9 @@ namespace ConvertidorNumerosRomanos.Tests
 
     internal static class CalculadoraNumerosRomanos
     {
-        internal static string Calcular(string numeroArabigo)
+        internal static string Calcular(int numeroArabigo)
         {
-            if (numeroArabigo == "1")
+            if (numeroArabigo == 1)
                 return "I";
             else
                 return "II";

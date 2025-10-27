@@ -45,13 +45,21 @@ namespace ConvertidorNumerosRomanos.Tests
 
             numeroRomano.Should().Be("V");
         }
-        
+
         [Fact]
         public void Si_NumeroEs6_Debe_RetornarVI()
         {
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(6);
 
             numeroRomano.Should().Be("VI");
+        }
+        
+        [Fact]
+        public void Si_NumeroEs7_Debe_RetornarVII()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(7);
+
+            numeroRomano.Should().Be("VII");
         }
     }
 

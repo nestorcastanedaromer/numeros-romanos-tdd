@@ -1,8 +1,9 @@
-using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-[TestClass]
-public partial class ConvertidorNumerosRomanosTests
+namespace ConvertidorNumerosRomanos.Tests
 {
-    
+    public class ConvertidorNumerosRomanosTests
+    {
+       
+    }
 }

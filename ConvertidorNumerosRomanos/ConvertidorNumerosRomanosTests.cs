@@ -37,8 +37,9 @@ namespace ConvertidorNumerosRomanos.Tests
         {
             if (numeroArabigo == 1)
                 return "I";
-            else
+            else if (numeroArabigo == 2)
                 return "II";
+            else return "III";
         }
     }
 }

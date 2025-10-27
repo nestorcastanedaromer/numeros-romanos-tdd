@@ -37,13 +37,21 @@ namespace ConvertidorNumerosRomanos.Tests
 
             numeroRomano.Should().Be("IV");
         }
-        
+
         [Fact]
         public void Si_NumeroEs5_Debe_RetornarV()
         {
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(5);
 
             numeroRomano.Should().Be("V");
+        }
+        
+        [Fact]
+        public void Si_NumeroEs6_Debe_RetornarVI()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(6);
+
+            numeroRomano.Should().Be("VI");
         }
     }
 

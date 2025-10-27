@@ -107,8 +107,10 @@ namespace ConvertidorNumerosRomanos.Tests
                 return "VII";
             else if (numeroArabigo == 8)
                 return "VIII";
-            else
+            else if (numeroArabigo == 9)
                 return "IX";
+            else
+                return "X";
         }
     }
 }

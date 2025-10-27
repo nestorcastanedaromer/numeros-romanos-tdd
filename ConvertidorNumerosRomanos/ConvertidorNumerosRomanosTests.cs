@@ -13,13 +13,21 @@ namespace ConvertidorNumerosRomanos.Tests
 
             numeroRomano.Should().Be("I");
         }
-        
+
         [Fact]
         public void Si_NumeroEs2_Debe_RetornarII()
         {
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(2);
 
             numeroRomano.Should().Be("II");
+        }
+        
+        [Fact]
+        public void Si_NumeroEs3_Debe_RetornarIII()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(3);
+
+            numeroRomano.Should().Be("III");
         }
     }
 

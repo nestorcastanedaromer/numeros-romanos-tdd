@@ -53,14 +53,14 @@ namespace ConvertidorNumerosRomanos.Tests
 
             numeroRomano.Should().Be("VI");
         }
-        
+
         [Fact]
         public void Si_NumeroEs7_Debe_RetornarVII()
         {
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(7);
 
             numeroRomano.Should().Be("VII");
-        }
+        }        
     }
 
     internal static class CalculadoraNumerosRomanos
@@ -77,8 +77,10 @@ namespace ConvertidorNumerosRomanos.Tests
                 return "IV";
             else if (numeroArabigo == 5)
                 return "V";
-            else
+            else if (numeroArabigo == 6)
                 return "VI";
+            else
+                return "VII";
         }
     }
 }

@@ -33,9 +33,9 @@ namespace ConvertidorNumerosRomanos.Tests
         [Fact]
         public void Si_NumeroEs4_Debe_RetornarIV()
         {
-            string numeroRomano = CalculadoraNumerosRomanos.Calcular(3);
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(4);
 
-            numeroRomano.Should().Be("III");
+            numeroRomano.Should().Be("IV");
         }
     }
 
@@ -47,7 +47,8 @@ namespace ConvertidorNumerosRomanos.Tests
                 return "I";
             else if (numeroArabigo == 2)
                 return "II";
-            else return "III";
+            else
+                return "III";
         }
     }
 }

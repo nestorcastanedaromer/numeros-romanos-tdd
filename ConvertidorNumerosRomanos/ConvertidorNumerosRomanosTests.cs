@@ -27,7 +27,10 @@ namespace ConvertidorNumerosRomanos.Tests
     {
         internal static string Calcular(string numeroArabigo)
         {
-            return "I";
+            if (numeroArabigo == "1")
+                return "I";
+            else
+                return "II";
         }
     }
 }

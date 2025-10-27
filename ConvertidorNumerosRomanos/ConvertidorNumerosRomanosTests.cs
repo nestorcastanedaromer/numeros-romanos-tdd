@@ -47,8 +47,10 @@ namespace ConvertidorNumerosRomanos.Tests
                 return "I";
             else if (numeroArabigo == 2)
                 return "II";
-            else
+            else if (numeroArabigo == 3)
                 return "III";
+            else
+                return "IV";
         }
     }
 }

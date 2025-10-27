@@ -60,6 +60,14 @@ namespace ConvertidorNumerosRomanos.Tests
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(7);
 
             numeroRomano.Should().Be("VII");
+        }      
+        
+        [Fact]
+        public void Si_NumeroEs8_Debe_RetornarVIII()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(8);
+
+            numeroRomano.Should().Be("VIII");
         }        
     }
 

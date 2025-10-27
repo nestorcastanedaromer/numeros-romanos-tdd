@@ -68,15 +68,23 @@ namespace ConvertidorNumerosRomanos.Tests
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(8);
 
             numeroRomano.Should().Be("VIII");
-        }     
-        
+        }
+
         [Fact]
         public void Si_NumeroEs9_Debe_RetornarIX()
         {
             string numeroRomano = CalculadoraNumerosRomanos.Calcular(9);
 
             numeroRomano.Should().Be("IX");
-        }        
+        }     
+        
+        [Fact]
+        public void Si_NumeroEs10_Debe_RetornarX()
+        {
+            string numeroRomano = CalculadoraNumerosRomanos.Calcular(10);
+
+            numeroRomano.Should().Be("X");
+        }          
     }
 
     internal static class CalculadoraNumerosRomanos
